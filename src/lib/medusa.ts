@@ -1,4 +1,4 @@
-export async function medusaApi(fetch, endpoint) {
+export async function medusa(fetch, endpoint) {
   const baseUrl = import.meta.env.VITE_MEDUSA_BACKEND_URL;
   const publishableKey = import.meta.env.VITE_MEDUSA_PUBLISHABLE_KEY;
 

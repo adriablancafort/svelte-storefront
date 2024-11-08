@@ -1,6 +1,6 @@
-import { medusaApi } from "$lib/medusa";
+import { medusa } from "$lib/medusa";
 
 export async function load({ fetch }) {
-  const products = await medusaApi(fetch, "products");
-  return { products };
+  const response = await medusa(fetch, "products");
+  return { response };
 }
